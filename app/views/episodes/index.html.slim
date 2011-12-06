@@ -1,0 +1,6 @@
+h1 Episodes
+#episodes
+
+=content_for :javascript do
+  javascript:
+    Dexterapp.init(#{@episodes.to_json.html_safe});

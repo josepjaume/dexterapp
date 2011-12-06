@@ -1,11 +1,12 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.1'
+gem 'dm-rails'
+gem 'data_mapper'
+gem 'sqlite3'
+gem 'dm-sqlite-adapter'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
 
 gem 'slim'
 
@@ -21,7 +22,6 @@ gem 'dexter', git: 'https://github.com/josepjaume/dexter', branch: 'rewrite'
 gem "rails-backbone"
 
 gem 'jquery-rails'
-gem 'handlebars-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

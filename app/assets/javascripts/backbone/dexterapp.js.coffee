@@ -10,6 +10,7 @@ window.Dexterapp =
   Routers: {}
   Views: {}
   init: (shows) ->
-    new Dexterapp.Routers.ShowsRouter()
-    @shows = new Dexterapp.Collections.ShowsCollection(shows)
+    new Dexterapp.Routers.EpisodesRouter()
+    @episodes = new Dexterapp.Collections.EpisodesCollection(shows)
+    @shows = new Dexterapp.Collections.ShowsCollection()
     Backbone.history.start()
