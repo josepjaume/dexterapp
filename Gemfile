@@ -21,6 +21,7 @@ gem 'dexter', git: 'https://github.com/josepjaume/dexter', branch: 'rewrite'
 gem "rails-backbone"
 
 gem 'jquery-rails'
+gem 'handlebars-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

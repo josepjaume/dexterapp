@@ -1,0 +1,9 @@
+h1 Shows
+#shows
+
+form#new-show action="#"
+  input type="text"
+
+=content_for :javascript do
+  javascript:
+    Dexterapp.init(#{@shows.to_json.html_safe});
