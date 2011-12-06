@@ -1,6 +1,8 @@
 class Dexterapp.Views.ShowsIndex extends Backbone.View
   initialize: ->
     @render()
+    _.bindAll(this, "render")
+    @collection.bind "add", @render
 
   render: ->
     $(@el).html(JST['shows/index']({ collection: @collection }))
